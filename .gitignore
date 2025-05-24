@@ -194,3 +194,4 @@ data/
 
 # Ignore backup or system files
 .DS_Store
+.idea/
