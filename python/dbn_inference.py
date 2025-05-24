@@ -8,6 +8,7 @@ from itertools import product
 import pickle
 import os
 import re
+import copy
 from joblib import Parallel, delayed
 
 def fitPgmpyDAG(DAG, data, method='MLE', ess=10):
@@ -25,7 +26,7 @@ def fitPgmpyDAG(DAG, data, method='MLE', ess=10):
     Returns:
         BayesianNetwork: The input DAG with fitted CPDs based on the specified estimation method.
     """
-    fittedDAG = DAG.copy()
+    fittedDAG = copy.deepcopy(DAG)
 
     data.columns = [col.strip() for col in data.columns]
     model_nodes = set(fittedDAG.nodes())
@@ -566,7 +567,7 @@ def mutilateDBN(DBN, intervention_vars):
         BayesianNetwork: The mutilated BayesianNetwork object.
     """
     # Create a copy of the original model to avoid modifying it
-    mutilated_DBN = DBN.copy()
+    mutilated_DBN = copy.deepcopy(DBN)
 
     # Iterate over each intervention variable
     for intervention_var in intervention_vars:
