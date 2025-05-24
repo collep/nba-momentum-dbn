@@ -3,7 +3,7 @@ Code and scripts developed for my master's thesis: "Applying Dynamic Bayesian Ne
 
 ### Download Required Data
 
-1. [Click here to access the data folder on Google Drive](https://drive.google.com/drive/folders/10QGmpQVEpHkHWfFGr107hnpJRSyQ0dJO?usp=sharing)
+1. [Click here to access the data folder on Google Drive](https://drive.google.com/drive/folders/19Yba_HMb6gr2WjItFNOuD1jFUKDalK6I?usp=sharing)
 2. Download the entire folder (`data/`) and place it into the project root so that the folder structure looks like:
 
 
