@@ -179,3 +179,18 @@ cython_debug/
 .Rproj.user/
 .Rproj
 .DS_Store
+
+
+# Ignore all data files and folders
+data/
+*.pkl
+*.csv
+*.rds
+*.RData
+*.feather
+*.parquet
+*.sav
+*.dta
+
+# Ignore backup or system files
+.DS_Store
